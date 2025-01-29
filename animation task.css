@@ -1,0 +1,79 @@
+.merge{
+    display: flex;
+    flex-direction: row;
+    gap: 70%;
+    margin-top: 5%;  
+}
+
+.scooter{
+    height: 150px;
+    width: 130px;
+    background: none;
+    /* position: absolute; */
+    animation-name: scooter;
+    animation-duration: 10s;
+    animation-fill-mode: forwards;
+    
+}
+@keyframes scooter
+{
+    /* 0% {
+        transform: translateX(800%);
+    }
+    100% {
+        transform: translateX(-5%);
+    } */
+    from{
+        transform: translateX(800%);
+    }
+    to{
+      transform: translateX(-5%);
+    }
+}
+.timer{
+    width: 150px;
+    margin-left: 40%;
+    margin-bottom: 45px;
+    margin-top: 5%;
+}
+.timer img{
+    text-align: center;
+    margin-top: 5%;
+    height: 150px;
+    width: 150px;
+    margin-left: 40%;
+    margin-bottom: 55px;
+    animation-name: spin;
+    animation-duration: 12s;
+    /* animation-iteration-count: infinite; */
+    /* transform: translate(-50%,-50%); */
+}
+
+@keyframes spin
+{
+    from{
+         transform:  rotate(0deg);
+    }
+    to{
+        transform:  rotate(360deg);
+    }
+}
+.timer:hover ~ .scooter {
+    animation-play-state: paused;
+   }
+
+.flag img{
+    height: 150px;
+    width: 130px;
+    position: absolute;
+    background: none;
+}
+
+.road img{
+    margin-top: -15px;
+}
+
+p{
+    margin-left: 45%;
+    
+}
